@@ -1,0 +1,282 @@
+/*VARIABLES*/
+
+$color-black:rgb(19, 17, 3);
+$color-white:rgb(253, 250, 216);
+$text-shadow: 1px 1px 2px black;
+$box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+background-color: black;
+  box-sizing: content-box;
+}
+
+/*BODY*/
+body {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+
+/*NAV CONTAINER*/
+.nav-container {
+  width: 100%;
+  height: 20%;
+
+}
+
+
+
+/*LOGO CIAO*/
+.logo-ciao {
+  width: 20%;
+  max-width: 20%;
+  height: auto;
+}
+
+/* NAV-BAR */
+.navbar-nav {
+
+
+  .nav-item {
+    word-spacing: 20px !important;
+
+    .nav-link {
+      color: $color-black;
+      font-size: 18px;
+    }
+  }
+}
+
+/*BUTTON*/
+.btn {
+  font-weight: bolder;
+}
+
+.nav-link:hover{
+  padding:30px;
+  background-color:$color-white;
+  color:black;
+
+}
+
+
+/*IMAGEN PRINCIPLA*/
+.img-principal {
+  background-image: url("../img/pastas---.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+
+
+  .welcome {
+    font-size: 100px;
+    color: $color-white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: $text-shadow;
+
+
+    .welcome-2 {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+/*FRASE AFTER IMGAEN PRINCIPAL*/
+
+.frase {
+  text-align: center;
+
+  .parrafo-1 {
+
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: $color-black;
+
+
+    .parrafo-2 {
+      text-align: center;
+      color: $color-black;
+
+
+
+
+    }
+
+  }
+}
+
+/*CONTAINER DEL CARRUSEL GRIS*/
+.main-container {
+  background-color: rgb(226, 226, 226);
+  margin-top: 20px;
+}
+
+/*IMAGENES CARROUSEL*/
+.img-c-1 {
+  margin: auto;
+  align-items: center;
+  border-radius: 10%;
+}
+
+h5 {
+  color: $color-white;
+  text-shadow: $text-shadow;
+}
+
+
+/*PREGUNTADEPSUES DEL CARROUSEL*/
+.pregunta {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+  color:brown;
+
+
+}
+.pregunta-2{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: $color-black;
+}
+
+
+
+
+/*BOTON MENU*/
+.boton-menu {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+/*----------------------------------------------MENU-------------------------------------------------*/
+
+/*CARDS*/
+
+.contenedor-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left:10px;
+
+
+}
+
+figure {
+  position: relative;
+  height: 250px;
+  width: 50px;
+  overflow: hidden;
+  /*PARA QUE SE OCULTE LO QUE SOBRESALE*/
+  border-radius:100px;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+
+
+}
+
+.txt-cards {
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 26, 3, 0.7);
+  transition: all 500ms ease-out;
+  opacity:0;
+  visibility: hidden;
+  text-align: center;
+  color:$color-white;
+
+
+    h3{
+        margin-top: 50px;
+    }
+
+      p{
+        margin-top: 50px;
+      }
+}
+
+
+.contenedor-cards  figure:hover > .txt-cards{
+    opacity:1;
+    visibility: visible;
+}
+
+/*LINEA SEPARADORA*/
+
+hr{
+  color:red;
+  width:100px;
+  margin:auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+
+}
+
+
+
+
+/*-------------------UBICACION-----------------------------------------*/
+/*IMAGEN UBICACION*/
+.img-ubicacion{
+  background-image: url("../img/resto.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+  
+  .welcome {
+    font-size: 40px;
+    color: $color-white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: $text-shadow;
+}
+
+
+.h1{
+  color:red;
+  font-size: 100px;
+}
