@@ -5,15 +5,13 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 /*BODY*/
 body {
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 /*FOOTER*/
@@ -96,7 +94,6 @@ body {
 .navbar-nav .nav-item {
   word-spacing: 20px !important;
 }
-
 .navbar-nav .nav-item .nav-link {
   color: #131103;
   font-size: 18px;
@@ -126,7 +123,6 @@ body {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-
 .img-principal .welcome {
   font-size: 3em;
   text-align: center;
@@ -134,7 +130,6 @@ body {
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
 }
-
 .img-principal .welcome .welcome-2 {
   font-size: 20px;
 }
@@ -143,14 +138,12 @@ body {
 .parrafos {
   text-align: center;
 }
-
 .parrafos .parrafos-1 {
   font-size: 30px;
   margin-top: 50px;
   font-weight: bold;
   color: #131103;
 }
-
 .parrafos .parrafos-1 .parrafo-2 {
   text-align: center;
   color: #131103;
@@ -159,9 +152,7 @@ body {
 /*IMAGENES CARROUSEL*/
 .img-c-1 {
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-radius: 10%;
   max-width: 100%;
   width: 100%;
@@ -171,9 +162,7 @@ body {
 /*PREGUNTADEPSUES DEL CARROUSEL*/
 .pregunta {
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   font-size: 50px;
   margin-top: 20px;
@@ -183,9 +172,7 @@ body {
 
 .pregunta {
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
@@ -209,14 +196,10 @@ body {
 
 /*posicionamiento iconos*/
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 100px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .footer .icon {
   width: 200%;
 }
@@ -225,15 +208,9 @@ body {
 /*CARDS*/
 .contenedor-cards {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   margin-left: 10px;
 }
@@ -245,15 +222,13 @@ figure {
   overflow: hidden;
   /*PARA QUE SE OCULTE LO QUE SOBRESALE*/
   border-radius: 100px;
-  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 img {
   width: 100%;
   height: 100%;
-  -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
 
@@ -263,7 +238,6 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(25, 26, 3, 0.7);
-  -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
   opacity: 0;
   visibility: hidden;
@@ -296,9 +270,7 @@ hr {
 /*FIDEOS-RELLENAS-SALSAS*/
 .tipos-pasta {
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
@@ -367,4 +339,3 @@ hr {
   background-color: orange;
   margin-top: 100px;
 }
-/*# sourceMappingURL=ciao.css.map */
