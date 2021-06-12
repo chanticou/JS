@@ -4,18 +4,9 @@ $color-black:rgb(19, 17, 3);
 $color-white:rgb(253, 250, 216);
 $text-shadow: 1px 1px 2px black;
 $box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-$footer-contacto:"font-family: 'Pacifico', cursive;";
-
-/*IMPORTANDO HEADER*/
-@import url("header");
-
-
-
-
-
-
+$color-pink:rgb(255, 217, 217);
+$color-grey:rgb(56, 56, 55);
+$color-orange:rgb(255, 123, 0);
 
 
 
@@ -28,119 +19,140 @@ $footer-contacto:"font-family: 'Pacifico', cursive;";
 
 /*BODY*/
 body {
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: 'Raleway', sans-serif;
 }
 
-  /*FOOTER*/
-  .footer-basic {
-    padding:40px 0;
-    background-color:#ffffff;
-    color:#4b4c4d;
-  }
-  
-  .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-  }
-  
-  .footer-basic li {
-    padding:0 10px;
-  }
-  
-  .footer-basic ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  
-  .footer-basic ul a:hover {
-    opacity:1;
-  }
-  
-  .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
-  }
-  
-  .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-  }
-  
-  .footer-basic .social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:#aaa;
-    margin-bottom:0;
-  }
-  /*END FOOTER*/
-  
-  /*NAV CONTAINER*/
-  .nav-container {
-    width: 100%;
-    height: 20%;
-    margin:rigth;
-  
-  }
-  
-  
-  
-  /*LOGO CIAO*/
-  .logo-ciao {
-    width: 20%;
-    max-width: 20%;
-    height: auto;
-  }
-  
-  /* NAV-BAR */
-  .navbar-nav {
-  
-  
-    .nav-item {
-      word-spacing: 20px !important;
-  
-      .nav-link {
-        color: $color-black;
-        font-size: 18px;
-      }
-    }
-  }
-  
-  /*BUTTON*/
-  .btn {
-    font-weight: bolder;
-  }
-  
-  .nav-link:hover {
-    padding: 30px;
-    background-color: rgb(228, 207, 88);
-    color: black;
-  
-  }
-  
+/*FOOTER*/
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: $color-orange;
+}
 
-/*IMAGEN PRINCIPLA*/
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+
+}
+
+/*END FOOTER*/
+
+/*HEADER*/
+
+/*NAV CONTAINER*/
+.nav-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  padding: 1rem 0;
+}
+
+.button:focus {
+  outline: none !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  width: 3em;
+}
+
+/*OPCIONES*/
+.opciones {
+  color: $color-orange;
+  font-weight: bold;
+}
+
+/*LOGO CIAO*/
+.logo-ciao {
+  width: 15%;
+  max-width: 15%;
+  height: auto;
+}
+
+/* NAV-BAR */
+.navbar-nav {
+  align-items: center;
+
+  .nav-link {
+    color: $color-grey;
+    font-size: 1em;
+    text-align: justify;
+  }
+}
+
+
+.nav-link:hover {
+  background-color: rgb(248, 217, 41);
+  color: black;
+
+}
+
+/*END HEADER*/
+
+
+/*IMAGEN PRINCIPAL Y TEXTO ADENTRO*/
 .img-principal {
-  background-image: url("../img/pastas---.jpg");
-  background-position: center;
+  background-image: url("../img/img-principal.jpg");
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -149,23 +161,27 @@ body {
   background-attachment: fixed;
   padding-top: 150px;
   padding-bottom: 150px;
-
-
+  display: flex;
 
   .welcome {
     font-size: 3em;
-    text-align: center;
     color: $color-white;
     font-weight: bold;
     text-shadow: $text-shadow;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
 
 
     .welcome-2 {
-      font-size: 20px;
+      font-size: 30px;
+
     }
   }
 }
-
 
 
 /*FRASE AFTER IMGAEN PRINCIPAL*/
@@ -174,73 +190,93 @@ body {
   text-align: center;
 
   .parrafos-1 {
-
     font-size: 30px;
     margin-top: 50px;
     font-weight: bold;
-    color: $color-black;
-
+    color: rgb(56, 56, 55);
 
     .parrafo-2 {
-      text-align: center;
       color: $color-black;
-
     }
 
   }
 }
 
-
-/*IMAGENES CARROUSEL*/
-.img-c-1 {
-  margin: auto;
-  align-items: center;
-  border-radius: 10%;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-
+/*COLOR FLECHITAS CAROUSEL*/
+.carousel-control-prev,
+.carousel-control-next {
+  color: #1a1a1a;
 }
 
+
+/*FLECHITA CAROUSEL izquierda*/
+.carousel-control-prev-icon {
+  background-color: rgb(187, 187, 187);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/*FLECHITA CAROUSEL derecha*/
+.carousel-control-next-icon {
+  background-color: rgb(187, 187, 187);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/*TAMAÑO IMAGENES CAROUSEL*/
+.carousel-item {
+  .carousel-image {
+    margin: 0 auto;
+    width: 55%;
+    height: auto;
+    border-radius: 1%;
+  }
+}
 
 
 /*PREGUNTADEPSUES DEL CARROUSEL*/
 .pregunta {
-  margin: auto;
-  align-items: center;
-  text-align: center;
-  font-size: 50px;
-  margin-top: 20px;
+  p {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: $color-orange;
+    margin-bottom: 15px;
+  }
+}
+
+/*BUTTON MENU*/
+.btn{
   font-weight: bold;
-  color: rgb(255, 217, 0);
+  font-size: 1em;
+  margin-top: 5px;
+  color: $color-orange;
+  margin:auto !important;
+  display: block;
+  width: 15%;
+  color: $color-orange;
+
 }
 
-.pregunta {
-  margin: auto;
-  align-items: center;
-  text-align: center;
-  font-size: 25px;
-  margin-top: 20px;
+/*BOTON ENVIAR FORMULARIO*/
+.btn-enviar {
   font-weight: bold;
-  color: rgb(255, 208, 0);
-  text-shadow: $text-shadow;
+  font-size: 1em;
+  margin-top: 5px;
+  color: $color-orange;
+  margin: 0 auto !important;
+  display: block;
+  border-radius: 3px;
+  padding: 5px;
 }
-
-
-
-
-/*BOTON MENU*/
-.boton-menu {
-  text-align: center;
-  margin-top: 10px;
-}
-
 
 /*TEXTO QUE DICE CONTACTO*/
 .footer-txt {
-  font-family: $footer-contacto;
   text-align: center;
-  margin-top:50px ;
+  margin-top: 50px;
 }
 
 /*posicionamiento iconos*/
@@ -255,33 +291,89 @@ body {
   }
 }
 
+/*FOMULARIO FINAL DE PAGINA*/
+.form {
+  background-color: $color-pink;
+  color: black;
+  opacity: 0.9;
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 50px;
+  color: $color-orange;
 
 
-  
+  .form-tamaño {
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    .col-md-8 {
+      margin: auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form-input {
+  width: 50%;
+}
+
 /*----------------------------------------------MENU-------------------------------------------------*/
+/*main menu*/
+.main-menu {
+  margin-top: 150px;
+}
+
+/*CUAL VAS A PROBAR PREGUNTA*/
+.pregunta {
+  h2 {
+    text-align: center;
+    color: $color-orange;
+  }
+}
+
+.pregunta-2 {
+  h2 {
+    text-align: center;
+    color: $color-orange;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
 /*CARDS*/
 .contenedor-cards {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  margin-left: 10px; }
+  flex-wrap: wrap;
+  padding: 10px;
+}
 
-figure {
+.card {
   position: relative;
-  height: 250px;
-  width: 50px;
   overflow: hidden;
   /*PARA QUE SE OCULTE LO QUE SOBRESALE*/
-  border-radius: 100px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-  cursor: pointer; }
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
 
-img {
+.card-img {
   width: 100%;
   height: 100%;
-  transition: all 500ms ease-out; }
+  transition: all 500ms ease-out;
+  object-fit: cover;
+}
 
 .txt-cards {
   position: absolute;
@@ -293,42 +385,80 @@ img {
   opacity: 0;
   visibility: hidden;
   text-align: center;
-  color: #fdfad8; }
-  .txt-cards h3 {
-    margin-top: 50px; }
-  .txt-cards p {
-    margin-top: 50px; }
+  color: #fdfad8;
+}
 
-.contenedor-cards figure:hover > .txt-cards {
+.txt-cards h3 {
+  margin-top: 50px;
+}
+
+.txt-cards p {
+  margin-top: 50px;
+}
+
+.contenedor-cards .card:hover>.txt-cards {
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+}
 
 /*LINEA SEPARADORA*/
 hr {
-  color: red;
+  color: $color-orange;
   width: 100px;
   margin: auto;
-  margin-bottom: 50px;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 
 /*FIDEOS-RELLENAS-SALSAS*/
-  .tipos-pasta{
+.tipos-pasta {
+  h3 {
     margin: auto;
     align-items: center;
     text-align: center;
     font-size: 25px;
     margin-top: 20px;
-    font-weight: bold;
-    color: rgb(255, 208, 0);
-    text-shadow: $text-shadow;
+    color: $color-orange;
   }
+}
+
+.tipos-pasta__postres {
+  h3 {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    color: $color-orange;
 
 
+  }
+}
+
+
+/*IMAGEN CARRITO*/
+.carrito {
+  width: 20%;
+  height: auto;
+}
 
 
 /*-------------------UBICACION-----------------------------------------*/
-/*IMAGEN UBICACION*/
+
+/*main ubicacion*/
+.main-ubicacion {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+
+/*IMAGEN UBICACION PORTADA*/
 .img-ubicacion {
   background-image: url("../img/resto.jpg");
   background-position: center;
@@ -342,60 +472,96 @@ hr {
   padding-bottom: 150px;
 }
 
+
+
 /*BOTONES*/
-.boton-1{
+.boton-1 {
   text-align: center;
-  margin-top:50px;
+  margin-top: 45px;
 }
 
-/*TEXTO UBICACION*/
+/*TEXTO UBICACION PORTADA*/
 .ubicacion {
   font-size: 40px;
   color: $color-white;
   font-weight: bold;
   text-align: center;
   text-shadow: $text-shadow;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 
+
+
+/*UBICACION-1-imagen*/
+.ubicacion-1__img {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
 /*UBICACION-1*/
-.ubicacion-1{
+.ubicacion-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
+  height: auto;
+  width: 100%;
+
+  .ubicacion-1__localidad {
+    color: $color-orange;
+  }
+}
+
+.ubicacion-1__info {
+  text-align: center;
+  margin-top: 50px;
+
 }
 
 /*UBICACION-2*/
+
 .ubicacion-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
-  background-color: rgb(255, 217, 217);
-  height: 500px;
+  background-color: $color-pink;
+  width: 100%;
+
+  .ubicacion-2__info{
+    .ubicacion-2__localidad{
+      justify-content: center;
+      margin-top: 50px;
+
+      .ubicacion-2__calle{
+        justify-content: center;
+        margin-top: 50px;
+
+        .ubicacion-2__parrafo{
+          justify-content: center;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
 }
 
-.info{
-  margin-top: 30px;
+/*BOTON UBICACION*/
+.botton-2{
+  color: $color-orange;
+  
 }
+
+
 
 /*IMAGEN DOS*/
-.interior-img__2{
-  margin-top: 30px;
+.ubicacion-2__img {
+  margin: 50px 0 50px 0;
+  width: 90%;
+  height: auto;
 }
-
-
-/*LOCALIDAD*/
-
-.localidad{
-  color:orange;
-}
-
-
-
-
-
-
-
-.form{
-  background-color: orange;
-  margin-top: 100px;
-}
-
-
-

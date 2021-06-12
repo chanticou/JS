@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pastas, italia, restaurant pastas, fideos, ravioles, ciao">
     <title>Menu</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,13 +13,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,100&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <!--FAVICON-->
-        <link  rel="icon"   href="../ciao-chantal/img/icons.png" type="image/png" />
-        <!--END FAVICON-->
+    <!--FAVICON-->
+    <link rel="icon" href="../img/icons.png" type="image/png" />
+    <!--END FAVICON-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-     <link rel="stylesheet" href="../scss/ciao.css">
+    <link rel="stylesheet" href="../scss/ciao.css">
 </head>
 
 
@@ -36,7 +39,7 @@
                     <button class="navbar-toggler col-sm-12 col-md-2" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">MENU</span>
+                        <span class="opciones">OPCIONES</span>
                     </button>
 
 
@@ -45,41 +48,34 @@
                         <a class="navbar-brand"></a>
                         <!--IMAGEN-LOGO-->
                         <div>
-                            <img class="logo-ciao ml-5 " src="../img/ciao-pasta-bar.jpg" alt="Logo-Ciao">
+                            <img class="logo-ciao ml-5" src="../img/ciao-pasta-bar.jpg" alt="Logo-Ciao">
                         </div>
                         <!--FIN-IMAGEN-LOGO-->
                         <!--MENU-->
-                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="../index.html">Nosotros <span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../html/ubicacion.html">Ubicacion</a>
+                                <a class="nav-link" href="./menu.html">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../html/menu.html">Menu</a>
+                                <a class="nav-link" href="./ubicacion.html">Ubicacion</a>
                             </li>
                             <!--FIN MENU-->
-                            <!--ORDER BOTON-->
-                            <button type="button" class="btn btn-outline-warning ml-3">ORDER</button>
+
                         </ul>
                     </div>
             </div>
         </nav>
         <!--FIN-NAV-BAR-->
+
     </header>
     <!--FIN HEADER-->
 
-
-
-
-
     <!--MAIN-->
-    <main>
+    <main class="main-menu">
         <!--CHOISE PASTA-->
         <div class="pregunta">
             <h2>¿Cual vas a probar hoy?</h2>
@@ -92,9 +88,11 @@
             <h3>Nuestros fideos</h3>
         </div>
         <!--CARDS-->
-        <div class="contenedor-cards card-deck">
+
+        <div class="container  contenedor-cards card-deck">
+            <!--CARD-1-->
             <figure class="card">
-                <img src="../img/caseritos.jpeg" alt="Fideos Caseritos">
+                <img class="card-img" src="../img/caseritos.jpeg" alt="Fideos Caseritos">
                 <div class="txt-cards">
                     <h3>CASERITOS</h3>
                     <p>Cortados con cuchillo</p>
@@ -103,7 +101,7 @@
 
             <!--CARD-2-->
             <figure class="card">
-                <img src="../img/fideos-espinaca.jpg" alt="Tallarines espinaca">
+                <img class="card-img" src="../img/fideos-espinaca.jpg" alt="Tallarines espinaca">
                 <div class="txt-cards">
                     <h3>Espinaca</h3>
                     <p>100% Verdura</p>
@@ -112,26 +110,24 @@
 
             <!--CARD-3-->
             <figure class="card">
-                <img src="../img/rulito.jpeg" alt="Ñoquis">
+                <img class="card-img" src="../img/rulito.jpeg" alt="Ñoquis">
                 <div class="txt-cards">
                     <h3>TIRABUZON</h3>
                     <p>Super elasticos</p>
                 </div>
             </figure>
         </div>
-
-        <br><br>
-
-
+        <br>
         <!--RELLENOS-->
 
         <div class="tipos-pasta">
             <h3>Rellenas</h3>
         </div>
         <!--CARDS-->
-        <div class="contenedor-cards card-deck">
+        <div class="container contenedor-cards card-deck">
+            <!--CARD-1-->
             <figure class="card">
-                <img src="../img/ravioles.jpg" alt="Ravioles">
+                <img class="card-img" src="../img/ravioles.jpg" alt="Ravioles">
                 <div class="txt-cards">
                     <h3>RAVIOLES</h3>
                     <p>Carne</p>
@@ -140,94 +136,139 @@
 
             <!--CARD-2-->
             <figure class="card">
-                <img src="../img/verdes.jpg" alt="Ravioles espinaca">
+                <img class="card-img" src="../img/verdes.jpg" alt="Ravioles espinaca">
                 <div class="txt-cards">
                     <h3>VERDES</h3>
                     <p>Espinaca y ricota</p>
                 </div>
             </figure>
 
+
             <!--CARD-3-->
             <figure class="card">
-                <img src="../img/canelones.jpg" alt="Canelones">
+                <img class="card-img" src="../img/canelones.jpg" alt="Ravioles espinaca">
                 <div class="txt-cards">
-                    <h3>CANELONES</h3>
-                    <p>Calabaza y mozzarella</p>
+                    <h3>Canelonis</h3>
+                    <p>Calabaza asada y queso de cabra</p>
                 </div>
             </figure>
+
         </div>
-
-
-        <br><br>
-
+        <br>
         <!--SALSAS-->
 
         <div class="tipos-pasta">
-            <h3>SALSAS</h3>
+            <h3>Salsas</h3>
         </div>
         <!--CARDS-->
-        <div class="contenedor-cards card-deck">
-            <figure class="card">
-                <img src="../img/fileto-2.jpg" alt="Salsa fileto">
-                <div class="txt-cards">
-                    <h3>FILETTO</h3>
-                    <p>Con tomates naturales</p>
-                </div>
-            </figure>
 
-            <!--CARD-2-->
+        <!--CARD-4-->
+        <div class="container  contenedor-cards card-deck">
             <figure class="card">
-                <img src="../img/4quesos.jpg" alt="Salsa 4 quesos">
+                <img class="card-img" src="../img/4quesos.jpg" alt="Salsa 4 quesos">
                 <div class="txt-cards">
                     <h3>4 QUESOS</h3>
                     <p>Roqueford, regianito, mozzarella, parmesano</p>
                 </div>
             </figure>
 
-            <!--CARD-3-->
+            <!--CARD-5-->
             <figure class="card">
-                <img src="../img/boloñesa-3.jpg" alt="Salsa boloñesa">
+                <img class="card-img" src="../img/boloñesa-3.jpg" alt="Salsa boloñesa">
                 <div class="txt-cards">
                     <h3>BOLOÑESA</h3>
                     <p>De la abuela, larga coccion</p>
                 </div>
             </figure>
+
+            <!--CARD-6-->
+            <figure class="card">
+                <img class="card-img" src="../img/fileto.jpg" alt="Salsa boloñesa">
+                <div class="txt-cards">
+                    <h3>FILETTO</h3>
+                    <p>Con tomates naturales</p>
+                </div>
+            </figure>
         </div>
+        <br>
+
+
+        <!--POSTRES-->
+        <div class="tipos-pasta">
+            <h3>Postres</h3>
+        </div>
+        <div class="pregunta-2">
+            <h2>¿Te gustaria agregar un postre?</h2>
+        </div>
+        <!--CARDS-->
+
+        <!--CARD-4-->
+        <div class="container  contenedor-cards card-deck">
+            <figure class="card">
+                <img class="card-img" src="../img/postre-1.jpeg" alt="Cheesecacke">
+                <div class="txt-cards">
+                    <h3>CHEESECAKE</h3>
+                    <p>Queso finlandia, salsa frutos rojos</p>
+                </div>
+            </figure>
+
+            <!--CARD-5-->
+            <figure class="card">
+                <img class="card-img" src="../img/postre-2.jpeg" alt="Muffin chocolate">
+                <div class="txt-cards">
+                    <h3>MUFFIN 70% CHOCOLATE</h3>
+                    <p>Chocolate al 70%, chips y naranaja</p>
+                </div>
+            </figure>
+
+            <!--CARD-6-->
+            <figure class="card">
+                <img class="card-img" src="../img/postre-3.jpeg" alt="Torre panqueues">
+                <div class="txt-cards">
+                    <h3>PANKACKES TOWER</h3>
+                    <p>Con dulce de leche y mix frutos rojos</p>
+                </div>
+            </figure>
+        </div>
+
+        </div>
+
+
 
     </main>
 
 
 
 
-<!--FOOTER-->
+    <!--FOOTER-->
 
-<div class="footer-basic">
-    <footer>
-        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Nosotros</a></li>
-            <li class="list-inline-item"><a href="#">Ubicacion</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-        </ul>
-        <p class="copyright">Company Name © 2021</p>
-    </footer>
-</div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                        class="icon ion-social-snapchat"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Nosotros</a></li>
+                <li class="list-inline-item"><a href="#">Ubicacion</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2021</p>
+        </footer>
+    </div>
 
-<!--END FOOTER-->
-
-
-
-
-
+    <!--END FOOTER-->
 
 
 
 
 
 
-<!--ENLACE SCRIP PARA CARRITO-->
-<script src="../JS/carrito.js"></script>
 
+
+
+    <!--ENLAZO MI JS -->
+    <script src="./JS/main.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
